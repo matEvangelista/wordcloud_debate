@@ -3,37 +3,37 @@
 <figure align="center">
 <figcaption align="center"><b>Ciro Gomes</b>
 </figcaption>
-<img src="wordcloud simples/ciro.png" width=300>
+<img src="wordcloud simples/ciro.png" width=600>
 </figure>
 
 <figure align="center">
 <figcaption align="center"><b>Felipe d'Ávila</b>
 </figcaption>
-<img src="wordcloud simples/felipe.png" width=300>
+<img src="wordcloud simples/felipe.png" width=600>
 </figure>
 
 <figure align="center">
 <figcaption align="center"><b>Jair Bolsonaro</b>
 </figcaption>
-<img src="wordcloud simples/jair.png" width=300>
+<img src="wordcloud simples/jair.png" width=600>
 </figure>
 
 <figure align="center">
 <figcaption align="center"><b>Lula</b>
 </figcaption>
-<img src="wordcloud simples/lula.png" width=300>
+<img src="wordcloud simples/lula.png" width=600>
 </figure>
 
 <figure align="center">
 <figcaption align="center"><b>Simone Tebet</b>
 </figcaption>
-<img src="wordcloud simples/simone.png" width=300>
+<img src="wordcloud simples/simone.png" width=600>
 </figure>
 
 <figure align="center">
 <figcaption align="center"><b>Soraya</b>
 </figcaption>
-<img src="wordcloud simples/soraya.png" width=300>
+<img src="wordcloud simples/soraya.png" width=600>
 </figure>
 
 
