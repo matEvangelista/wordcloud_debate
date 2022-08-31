@@ -22,6 +22,6 @@ for candidato in frequencia:
 
 i = 0
 for candidato in palavras:
-    wordcloud = WordCloud(collocations=False, width=1000, height=1000, background_color='white').generate(candidato)
+    wordcloud = WordCloud(collocations=False, width=1000, height=800, background_color='white').generate(candidato)
     wordcloud.to_file('wordcloud simples/{}.png'.format(nomes[i]))
     i += 1
