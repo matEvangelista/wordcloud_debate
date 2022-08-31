@@ -1,6 +1,4 @@
-from cgitb import text
 import csv
-from socket import PACKET_LOOPBACK
 from nltk.corpus import PlaintextCorpusReader
 from collections import Counter
 from nltk.corpus import stopwords
@@ -10,7 +8,7 @@ import string
 nomes = ['ciro', 'felipe', 'jair', 'lula', 'simone', 'soraya']
 partidos = ['pl', 'psl', 'pt', 'pcdob', 'pdt', 'dem', 'psb', 'ptb',
             'mdb', 'pp', 'psc']  # apenas os que tem menos de 4 letras
-nomes_proprios = ['brasil', *[nomes]]
+nomes_proprios = ['brasil', *nomes, 'bolsonaro', 'tebet']
 textos_lidos = []
 texto_final = []
 mais_comuns = []
@@ -39,5 +37,6 @@ mais_comuns = [Counter(candidato).most_common()
 for i in range(len(nomes)):
     with open('frequencia/{}.csv'.format(nomes[i]), 'w', encoding='UTF8', newline='') as arq:
         escritor = csv.writer(arq)
+        escritor.writerow(['palavra', 'quantidade'])
         for linha in mais_comuns[i]:
             escritor.writerow(linha)
