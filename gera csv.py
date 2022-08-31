@@ -6,6 +6,8 @@ from nltk.tokenize import word_tokenize
 import string
 
 nomes = ['ciro', 'felipe', 'jair', 'lula', 'simone', 'soraya']
+partidos = ['pl', 'psl', 'pt', 'pcdob', 'pdt', 'dem', 'psb', 'ptb',
+            'mdb', 'pp', 'psc']  # apenas os que tem menos de 4 letras
 textos_lidos = []
 texto_final = []
 mais_comuns = []
@@ -13,12 +15,13 @@ mais_comuns = []
 for i in range(len(nomes)):
     textos_lidos.append(PlaintextCorpusReader(
         'textos', nomes[i]+'.txt', encoding='utf-8'))
-    texto_final.append([w.lower() for w in textos_lidos[i].words()
+    texto_final.append([w for w in textos_lidos[i].words()
                         if (w.lower() not in stopwords.words('portuguese'))
                         and (w not in string.punctuation)
                         and (w.isnumeric() == False)
                         and (w.lower() not in ['boa', 'noite', 'bandeirantes', 'porque'])
-                        and (len(w) > 3)])
+                        and (len(w) > 3)
+                        or w.lower() in partidos])
 
 texto_final = [' '.join(texto) for texto in texto_final]
 
