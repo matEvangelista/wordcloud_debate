@@ -12,7 +12,7 @@ palavras = ['' for i in range(len(nomes))]
 for nome in nomes:
     with open('frequencia/{}.csv'.format(nome), 'r', encoding='utf-8') as arq:
         leitor = csv.reader(arq)
-        frequencia.append(list(leitor))
+        frequencia.append(list(leitor)[1:]) # elimando header
 
 i = 0
 for candidato in frequencia:
