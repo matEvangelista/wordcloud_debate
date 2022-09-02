@@ -1,6 +1,6 @@
 # Tag cloud (ou word cloud) das palavras mais ditas pelos candidatos à presidência no primeiro debate na Band
 
-Foram feitos dois conjuntos de imagens: uma com o texto sem alterações e outra com <i>lemmatization</i>, que colocar verbos no infinitivo e substantivos no plural
+Foram feitos dois conjuntos de imagens: uma com o texto sem alterações e outra com <i>lemmatization</i>, que coloca verbos no infinitivo e substantivos no plural
 
 ## Texto sem alterações
 
