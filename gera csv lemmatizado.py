@@ -28,8 +28,11 @@ for doc in doc_candidatos:
         ' '.join([token.lemma_ for token in doc]))
 
 # por algum motivo, tranformou-se "família" em "famílio". Apesar de não recomendado, aqui está uma substituição específica para o caso
+# mesma coisa com "pessoa", que virou "pessoo"
+
 for i in range(len(nomes)):
-    fala_candidatos_lemmatizado[2] = fala_candidatos_lemmatizado[2].replace('famílio', 'família')
+    fala_candidatos_lemmatizado[i] = fala_candidatos_lemmatizado[i].replace('famílio', 'família')
+    fala_candidatos_lemmatizado[i] = fala_candidatos_lemmatizado[i].replace('pessoo', 'pessoa')
 
 palavras_candidatos = [word_tokenize(candidato)
                        for candidato in fala_candidatos_lemmatizado]
