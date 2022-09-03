@@ -33,7 +33,7 @@ frequencia = [{chave: int(candidato[chave])
 
 local = 'wordcloud simples lemmatizado' if lemma else 'wordcloud simples'
 for i in range(len(nomes)):
-    wordcloud = WordCloud(collocations=False, width=1000, height=800,
+    wordcloud = WordCloud(collocations=False, width=1200, height=800,
                           background_color='white').generate_from_frequencies(frequencia[i])
     wordcloud.to_file('{}/{}.png'.format(local, nomes[i]))
     i += 1
